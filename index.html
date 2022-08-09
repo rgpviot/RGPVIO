@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+h1{
+background-color: #fff
+}
+.column {
+  float: right;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff
+}
+
+.container {
+  padding: 0 10px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body background="https://www.rgpv.ac.in/images/slider/slide1.jpg?1659916800054">
+<center><h1>Rajiv Gandhi Proudyogiki Vishwavidyalaya</h1></center>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://gumlet.assettype.com/freepressjournal/2021-05/8639d44e-e912-4ead-9d33-7d422e392c2a/WhatsApp_Image_2021_05_27_at_2_44_22_PM.jpeg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Sunil Kumar Gupta</h2>
+        <p class="title">VC RGPV Bhopal</p>
+        <p><button class="button">Go To Dashboard</button></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
